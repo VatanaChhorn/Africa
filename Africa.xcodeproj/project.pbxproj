@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35721711256F958000A186E6 /* ConvertImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35721710256F958000A186E6 /* ConvertImageView.swift */; };
+		3526B59D257106510015352B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3526B59C257106510015352B /* ImageViewModel.swift */; };
+		3526B5A2257108F80015352B /* BuddleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3526B5A1257108F80015352B /* BuddleExtension.swift */; };
+		35721711256F958000A186E6 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35721710256F958000A186E6 /* CoverImageView.swift */; };
 		35AC72E9256CEF8D00727E49 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC72E8256CEF8D00727E49 /* AfricaApp.swift */; };
 		35AC72EB256CEF8D00727E49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AC72EA256CEF8D00727E49 /* ContentView.swift */; };
 		35AC72ED256CEF8F00727E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35AC72EC256CEF8F00727E49 /* Assets.xcassets */; };
@@ -33,7 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		35721710256F958000A186E6 /* ConvertImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertImageView.swift; sourceTree = "<group>"; };
+		3526B59C257106510015352B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		3526B5A1257108F80015352B /* BuddleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddleExtension.swift; sourceTree = "<group>"; };
+		35721710256F958000A186E6 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		35AC72E5256CEF8C00727E49 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AC72E8256CEF8D00727E49 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		35AC72EA256CEF8D00727E49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,10 +75,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3526B59B257106300015352B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3526B59C257106510015352B /* ImageViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3526B5A0257108E90015352B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3526B5A1257108F80015352B /* BuddleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		3572170F256F956A00A186E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				35721710256F958000A186E6 /* ConvertImageView.swift */,
+				35721710256F958000A186E6 /* CoverImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +118,8 @@
 		35AC72E7256CEF8C00727E49 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				3526B5A0257108E90015352B /* Extension */,
+				3526B59B257106300015352B /* Model */,
 				3572170F256F956A00A186E6 /* View */,
 				35AC730E256CF26600727E49 /* Data */,
 				35AC72F8256CF22B00727E49 /* Video */,
@@ -241,12 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35721711256F958000A186E6 /* ConvertImageView.swift in Sources */,
+				35721711256F958000A186E6 /* CoverImageView.swift in Sources */,
 				35AC72EB256CEF8D00727E49 /* ContentView.swift in Sources */,
 				35AC7325256CF85200727E49 /* MainView.swift in Sources */,
+				3526B5A2257108F80015352B /* BuddleExtension.swift in Sources */,
 				35AC731E256CF80B00727E49 /* MapView.swift in Sources */,
 				35AC731B256CF7E200727E49 /* VideoListView.swift in Sources */,
 				35AC72E9256CEF8D00727E49 /* AfricaApp.swift in Sources */,
+				3526B59D257106510015352B /* ImageViewModel.swift in Sources */,
 				35AC7322256CF82200727E49 /* GalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

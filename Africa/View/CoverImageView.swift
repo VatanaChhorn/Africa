@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-struct ConvertImageView: View {
+struct CoverImageView: View {
     // MARK: - PROPERTIES
+    
+    var coverImageModel: [imageViewModel] = Bundle.main.decodable("covers.json")
     
     // MARK: - BODY
     var body: some View {
         TabView {
-            ForEach (0..<5){ item in 
+            ForEach (coverImageModel){ item in
                 Image("cover-lion")
                     .resizable()
                     .scaledToFit()
@@ -27,7 +29,7 @@ struct ConvertImageView: View {
 
 struct ConvertImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ConvertImageView()
+        CoverImageView()
             .previewLayout(.fixed(width: 400, height: 300))
     }
 }
