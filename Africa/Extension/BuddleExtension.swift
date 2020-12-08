@@ -9,7 +9,9 @@ import Foundation
 
 extension Bundle {
     
-    func decodable(_ file: String) -> [imageViewModel] {
+    /* T is stand for Type - which in the case of swift generic */
+    
+    func decodable <T: Codable> (_ file: String) -> T {
         
         // MARK: - 1. Locate Json File
         
@@ -29,7 +31,7 @@ extension Bundle {
         
         // MARK: - 4. Create a property for decoded data
         
-        guard let loaded = try? decoder.decode([imageViewModel].self, from: data) else {
+        guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Fail to load data.")
         }
         

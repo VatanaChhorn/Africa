@@ -11,6 +11,8 @@ struct ContentView: View {
     
     // MARK: - Properties
     
+    let animals : [Animal] = Bundle.main.decodable("animals.json")
+    
     // MARK: - BODY
     
     var body: some View {
@@ -19,6 +21,13 @@ struct ContentView: View {
                 CoverImageView()
                     .frame(height: 250)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .padding(.vertical)
+                
+                ForEach(animals) {
+                    animal in
+                    animalListItemView(animal: animal)
+                }
+                
             }  //:  End List
             .navigationBarTitle("AFRICA", displayMode : .large)
             
