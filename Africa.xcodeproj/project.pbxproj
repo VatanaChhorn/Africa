@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3526B59D257106510015352B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3526B59C257106510015352B /* ImageViewModel.swift */; };
 		3526B5A2257108F80015352B /* BuddleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3526B5A1257108F80015352B /* BuddleExtension.swift */; };
+		3555321C25818D9B0080D637 /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555321B25818D9B0080D637 /* InsetFactView.swift */; };
 		35721711256F958000A186E6 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35721710256F958000A186E6 /* CoverImageView.swift */; };
 		357740432580E329000F6483 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357740422580E329000F6483 /* AnimalDetailView.swift */; };
 		357740462580E7C7000F6483 /* Headline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357740452580E7C7000F6483 /* Headline.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		3526B59C257106510015352B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		3526B5A1257108F80015352B /* BuddleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddleExtension.swift; sourceTree = "<group>"; };
+		3555321B25818D9B0080D637 /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		35721710256F958000A186E6 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		357740422580E329000F6483 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		357740452580E7C7000F6483 /* Headline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headline.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				35721710256F958000A186E6 /* CoverImageView.swift */,
 				357740422580E329000F6483 /* AnimalDetailView.swift */,
+				3555321B25818D9B0080D637 /* InsetFactView.swift */,
 				357740482580E9E2000F6483 /* InsertGalleryView.swift */,
 				35B291F9257FC31E003A9511 /* animalListItemView.swift */,
 				357740452580E7C7000F6483 /* Headline.swift */,
@@ -281,6 +284,7 @@
 				35721711256F958000A186E6 /* CoverImageView.swift in Sources */,
 				35AC72EB256CEF8D00727E49 /* ContentView.swift in Sources */,
 				35AC7325256CF85200727E49 /* MainView.swift in Sources */,
+				3555321C25818D9B0080D637 /* InsetFactView.swift in Sources */,
 				357740462580E7C7000F6483 /* Headline.swift in Sources */,
 				3526B5A2257108F80015352B /* BuddleExtension.swift in Sources */,
 				35B291FD257FCBE6003A9511 /* animalModel.swift in Sources */,
