@@ -65,9 +65,28 @@ struct AnimalDetailView: View {
                 
                 // DESCRIPTION
                 
+                Group {
+                    Headline(picture: "info.circle", headlineText: "All about \(animals.name)")
+                    Text(animals.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                
                 // MAP
                 
+                Group {
+                    Headline(picture: "map", headlineText: "National parks")
+                    
+                    InsertMapView()
+                } .padding(.horizontal)
+                
                 // LINK
+                
+                Group {
+                    Headline(picture: "books.vertical", headlineText: "Learn More")
+                    
+                    ExternalWebLinkView(animal: animals)
+                } .padding(.horizontal)
                 
             }  //: Vstack
             .navigationBarTitle("Learn More About \(animals.name)", displayMode: .inline)
