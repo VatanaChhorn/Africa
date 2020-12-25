@@ -70,6 +70,7 @@ struct AnimalDetailView: View {
                     Text(animals.description)
                         .multilineTextAlignment(.leading)
                         .layoutPriority(1)
+                        .padding(.horizontal)
                 }
                 
                 // MAP
@@ -86,7 +87,8 @@ struct AnimalDetailView: View {
                     Headline(picture: "books.vertical", headlineText: "Learn More")
                     
                     ExternalWebLinkView(animal: animals)
-                } .padding(.horizontal)
+                } .padding(.bottom)
+                .padding(.horizontal)
                 
             }  //: Vstack
             .navigationBarTitle("Learn More About \(animals.name)", displayMode: .inline)
