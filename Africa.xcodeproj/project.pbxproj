@@ -44,6 +44,7 @@
 		35B291FD257FCBE6003A9511 /* animalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B291FC257FCBE6003A9511 /* animalModel.swift */; };
 		35B2E23025976D010077910F /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B2E22F25976D010077910F /* VideoModel.swift */; };
 		35B2E23325976D720077910F /* VideoListItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B2E23225976D720077910F /* VideoListItemsView.swift */; };
+		35FF7401259AFF2300C289C8 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FF7400259AFF2300C289C8 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		35B291FC257FCBE6003A9511 /* animalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalModel.swift; sourceTree = "<group>"; };
 		35B2E22F25976D010077910F /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		35B2E23225976D720077910F /* VideoListItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemsView.swift; sourceTree = "<group>"; };
+		35FF7400259AFF2300C289C8 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				3526B59C257106510015352B /* ImageViewModel.swift */,
 				35B291FC257FCBE6003A9511 /* animalModel.swift */,
 				35B2E22F25976D010077910F /* VideoModel.swift */,
+				35FF7400259AFF2300C289C8 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				35080E07259612E800812562 /* ExternalWebLinkView.swift in Sources */,
 				3526B59D257106510015352B /* ImageViewModel.swift in Sources */,
 				35B2E23025976D010077910F /* VideoModel.swift in Sources */,
+				35FF7401259AFF2300C289C8 /* LocationModel.swift in Sources */,
 				35080E032596024B00812562 /* InsertMapView.swift in Sources */,
 				35AC7322256CF82200727E49 /* GalleryView.swift in Sources */,
 				357740492580E9E2000F6483 /* InsertGalleryView.swift in Sources */,
