@@ -22,22 +22,81 @@ struct MapView: View {
     
     // MARK: - BODY
     var body: some View {
-//        Map(coordinateRegion: $region)
+        //        Map(coordinateRegion: $region)
         Map(coordinateRegion: $region, annotationItems: locations) { item in
-       
-//            MapMarker (coordinate: item.location, tint: .accentColor)
+            
+            //            MapMarker (coordinate: item.location, tint: .accentColor)
             
             
             /* Custom Basic Annotatipm*/
-            MapAnnotation (coordinate: item.location) {
-                Image("logo")
+            //            MapAnnotation (coordinate: item.location) {
+            //                Image("logo")
+            //                    .resizable()
+            //                    .scaledToFit()
+            //                    .frame(width: 32, height: 32, alignment: .center)
+            
+            /* Complex Map Annotatipm*/
+            MapAnnotation(coordinate: item.location) {
+                MapAnnotationView(location: item)
+            }
+        }  //: ANNOTATION
+        .overlay(
+            
+            HStack {
+                Image("compass")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32, alignment: .center)
-            }  //: ANNOTATION
-        }
+                    .frame(width: 48, height: 48, alignment: .center)
+                
+                VStack {
+                    HStack {
+                        Text("Latitude:")
+                            .font(.footnote)
+                            .bold()
+                            .foregroundColor(.accentColor)
+                        
+                        Spacer()
+                        
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .bold()
+                            .foregroundColor(.white)
+                    }  //: HStack
+                    
+                    Divider()
+                    
+                    HStack {
+                        Text("Longitude:")
+                            .font(.footnote)
+                            .bold()
+                            .foregroundColor(.accentColor)
+                        
+                        Spacer()
+                        
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .bold()
+                            .foregroundColor(.white)
+                    }  //: HStack
+                    
+                    
+                }  //: VStack
+                
+            }  //: HStack
+            .padding (.horizontal, 16)
+            .padding (.vertical, 12)
+            .background(
+                Color.black
+                    .cornerRadius(8)
+                    .opacity(0.6)
+            ) .padding()
+            , alignment: .top
+            
+        )  //:  OVERLAY
+        
     }
 }
+
 
 // MARK: - PREVIEW
 struct MapView_Previews: PreviewProvider {
